@@ -473,4 +473,3 @@ h1, h2, h3, h4,
 @media(max-width:680px){.map-sun{width:100px;height:100px}.map-pin text{font-size:16px}}
 
 /* Главная фотография — отдельный файл, не фотография карточки */
-.hero-image { background-image: url("yasawi-hero.webp") !important; background-position: center 48%; }
