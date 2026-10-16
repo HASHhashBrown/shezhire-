@@ -451,7 +451,7 @@ h1, h2, h3, h4,
 }
 
 /* ШЕЖІРЕ 3.0 — refined cartography and accessible media */
-.hero-image{background-image:url('images/yasawi.svg');}
+.hero-image{background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Mausoleum%20of%20Khoja%20Ahmed%20Yasawi.jpg');}
 .map-section{background:linear-gradient(155deg,#d8e9e5 0%,#d6e1d6 45%,#e9dfcc 100%);}
 .map-art{background:radial-gradient(circle at 75% 16%,#f6e7bf 0%,transparent 32%),linear-gradient(145deg,#b8d7dc,#e4eddf 65%,#f1dfc3);isolation:isolate;overflow:hidden}
 .map-art::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.22;background-image:radial-gradient(#476f74 0.7px,transparent 0.7px);background-size:14px 14px}
