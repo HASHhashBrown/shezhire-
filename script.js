@@ -10,8 +10,10 @@ function setImage(el,url,fallback){
   image.src=url;
 }
 const heroImage = document.querySelector('.hero-image');
+
 if (heroImage) {
   setImage(heroImage, places[0].image, places[0].fallback);
+}
 }
 const cards=document.getElementById('place-cards');places.forEach((p,i)=>{const a=document.createElement('article');a.className='place-card';a.innerHTML=`<div class="card-photo"><span class="card-number">0${i+1}</span></div><div class="card-body"><span class="eyebrow">${p.region}</span><h3>${p.name}</h3><p>${p.short}</p><button class="card-link" type="button">Картадан көру ↗</button></div>`;setImage(a.querySelector('.card-photo'),p.image,p.fallback);a.querySelector('button').addEventListener('click',()=>{selectPlace(i);document.getElementById('map').scrollIntoView({behavior:'smooth'});});cards.appendChild(a)});
 const svgNS='http://www.w3.org/2000/svg',pointLayer=document.getElementById('map-points');const markers=[];places.forEach((p,i)=>{const g=document.createElementNS(svgNS,'g');g.setAttribute('class','map-pin');g.setAttribute('tabindex','0');g.setAttribute('role','button');g.setAttribute('aria-label',p.name);g.innerHTML=`<circle class="halo" cx="${p.x}" cy="${p.y}" r="29"/><circle class="core" cx="${p.x}" cy="${p.y}" r="11"/><text x="${p.x+18}" y="${p.y-17}">${p.region}</text>`;g.addEventListener('click',()=>selectPlace(i));g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectPlace(i)}});pointLayer.appendChild(g);markers.push(g)});
