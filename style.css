@@ -479,3 +479,12 @@ h1, h2, h3, h4,
 
 /* Always show content; no scroll-triggered blank sections on mobile Safari */
 .reveal, .reveal.visible { opacity:1 !important; transform:none !important; visibility:visible !important; }
+
+/* How it works: replaces the on-page QR image */
+.how-showcase { gap: 0; }
+.how-visual { display:flex; align-items:center; justify-content:center; gap:12px; width:100%; margin:38px 0 30px; color:#253d3a; }
+.how-landmark,.how-phone { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; min-width:0; flex:1; }
+.how-landmark span,.how-phone span { font-size:12px; font-weight:600; color:#647b78; }
+.how-connector { width:42px; flex:0 0 42px; color:#a34d3c; }
+.how-note { display:inline-block; margin-top:26px; padding:10px 15px; border:1px solid #a34d3c; border-radius:99px; color:#a34d3c; font-size:12px; letter-spacing:.04em; }
+@media(max-width:680px){.how-visual{gap:6px;margin:28px 0 22px}.how-landmark svg{width:74px;height:72px}.how-phone svg{width:57px;height:83px}.how-connector{width:24px;flex-basis:24px}.how-landmark span,.how-phone span{font-size:10px}.qr-showcase{padding:38px 18px}.how-showcase h3{font-size:25px}}

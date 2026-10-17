@@ -38,24 +38,21 @@
 <section class="timeline-section reveal" id="timeline"><div class="section-line"><span>УАҚЫТ ПЕН ТАРИХ</span><span>КЕШЕ • БҮГІН • ЕРТЕҢ</span></div><div class="timeline-head"><h2>Тарих <em>белестері</em></h2><p>Дәуірлер арқылы еліміздің мәдени мұрасына көз жүгіртіңіз.</p></div><div class="era-tabs" role="tablist" aria-label="Тарихи кезеңдер"><button class="era active" data-era="bronze" role="tab" aria-selected="true">Қола дәуірі</button><button class="era" data-era="medieval" role="tab" aria-selected="false">Орта ғасырлар</button><button class="era" data-era="timurid" role="tab" aria-selected="false">Әмір Темір дәуірі</button></div><div class="era-content" id="era-content" aria-live="polite"></div></section>
 <section class="quiz-section" id="quiz"><div class="quiz-intro"><span class="eyebrow">БІЛІМ МЕН ТАНЫМ</span><h2>Тарихты қаншалықты <em>білесің?</em></h2><p>Үш сұраққа жауап беріп, Ұлы дала мұрасы туралы біліміңді сынап көр.</p></div><div class="quiz-card" id="quiz-card"><span class="quiz-progress" id="quiz-progress">01 / 03</span><h3 id="quiz-question">Қожа Ахмет Ясауи кесенесі қай қалада орналасқан?</h3><div class="answers" id="quiz-answers"></div><p class="quiz-feedback" id="quiz-feedback" aria-live="polite"></p><button class="pill pill-dark" id="quiz-next" hidden>Келесі сұрақ →</button></div></section>
 
-<!-- QR EXPERIENCE & BUSINESS IMPACT -->
+<!-- HOW IT WORKS & BUSINESS IMPACT -->
 <section class="qr-section" id="qr">
 
   <div class="qr-heading">
     <span class="eyebrow">
-      ЦИФРЛЫҚ МҰРА • ЖАҢА МҮМКІНДІКТЕР
+      ШЕЖІРЕ • ҚАЛАЙ ЖҰМЫС ІСТЕЙДІ?
     </span>
 
     <h2>
-      Тарихқа апарар<br>
-      <em>жаңа жол.</em>
+      Тарихты танудың<br>
+      <em>үш қадамы.</em>
     </h2>
 
     <p>
-      Бір ғана QR-код арқылы ғасырлар
-      қойнауына саяхат жасаңыз.
-      Тарихи мұраны танудың заманауи
-      әрі қолжетімді тәсілін ұсынамыз.
+      Тарихи орынға барыңыз, ақпараттық тақтайшадағы QR-кодты сканерлеңіз және сол ескерткіштің тарихын телефоныңыздан оқыңыз.
     </p>
   </div>
 
@@ -66,10 +63,10 @@
       <div class="qr-feature">
         <span class="qr-feature-number">01</span>
         <div>
-          <h3>Сканерле</h3>
+          <h3>Ескерткішті тап</h3>
           <p>
-            Тарихи ескерткіш жанындағы
-            QR-кодты смартфонмен сканерлеңіз.
+            Тарихи орынға барып,
+            жанындағы ақпараттық тақтайшаны табыңыз.
           </p>
         </div>
       </div>
@@ -77,10 +74,9 @@
       <div class="qr-feature">
         <span class="qr-feature-number">02</span>
         <div>
-          <h3>Тарихты таны</h3>
+          <h3>QR-кодты сканерле</h3>
           <p>
-            Нысанның тарихы, мәдени маңызы
-            және сенімді дереккөздерімен танысыңыз.
+            Телефон камерасымен тақтайшадағы QR-кодты сканерлеңіз.
           </p>
         </div>
       </div>
@@ -88,43 +84,32 @@
       <div class="qr-feature">
         <span class="qr-feature-number">03</span>
         <div>
-          <h3>Мұраны дәріпте</h3>
+          <h3>Тарихты аш</h3>
           <p>
-            Танымдық ақпаратты бөлісіп,
-            ұлттық мұраны насихаттауға
-            өз үлесіңізді қосыңыз.
+            Дәл осы ескерткіштің тарихын, суреттерін және қызықты деректерін оқыңыз.
           </p>
         </div>
       </div>
 
     </div>
 
-    <div class="qr-showcase">
-
-      <span class="eyebrow">ШЕЖІРЕ / DIGITAL PASS</span>
-
-      <div class="qr-frame">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeAQAAAAB6HIMaAAAB2klEQVR4nO2YMY4bQQwEa44LXDj7Az+F+oGf5K9RDxLADQ+g0A5mV77AB0cGGNxECzFptGp6SA7x5Xm+fV2D7+K/iigBTFEzlDCj5vLbq6Nal2TSkiqF0k1SNlS7AQPn2K3Cjx2wBxy7PRqS8Kl4/Nrwwp97E0F/OUoHt3Rm1AxTMGWJdSTh4nbJAyUXxg3VvsF9jAEOvKdv+HbcnmOMvSUJ66RLYsoUdv6kft4ubjEFrATT8tmaql2sxvITYIoZXW8ZNbVioaYsUbrSmU29BVdSuEkFSrek68uL6frrp0zxyrGOaiVTKL3gNHnKpOrqbc2wM8SipqQwqSu3borCTWGnw9A2wRTMAIdLdlJ4y5d33bJT5MqHmlr6W6p1JZZu6XwCoym31816xULB+dFRrUzB6mzx4mwd2yYYUDicUfYnHzqq9dXGLD8tkcSMptymm0LSulkL45OHnmoT0+KWs2lsy+05O7B6xcWD0lt6u7F2CKUNHzM33YHtATNa7sFcEsf42O8FHzsbFPfnuPWbIq9dDb7hlrzXXcc+oLaGM++reFfyHLc6bmO/xod2arfrw7cHJp4/xPFzzGzJ7WvHGGuCAKSw7NrfJnD2YHr1t1PV8S0b35v8/1b8DTy9tt2jEfAtAAAAAElFTkSuQmCC"
-          id="heritage-qr"
-          alt="Шежіре сайтына апаратын QR-код"
-          width="200"
-          height="200"
-        >
+    <div class="qr-showcase how-showcase" aria-label="Шежіре жобасының жұмыс істеу жолы">
+      <span class="eyebrow">ШЕЖІРЕ / ҚАЛАЙ ЖҰМЫС ІСТЕЙДІ?</span>
+      <div class="how-visual" aria-hidden="true">
+        <div class="how-landmark">
+          <svg viewBox="0 0 110 100" width="104" height="95" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 86H98M23 86V47H87V86M18 47H92L55 14L18 47Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M43 86V62C43 55 48 51 55 51C62 51 67 55 67 62V86M33 58V72M77 58V72" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          <span>Тарихи орын</span>
+        </div>
+        <svg class="how-connector" viewBox="0 0 50 20" aria-hidden="true"><path d="M2 10H46M38 3L46 10L38 17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="how-phone">
+          <svg viewBox="0 0 78 110" width="77" height="109" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="3" width="60" height="104" rx="11" stroke="currentColor" stroke-width="3"/><path d="M32 13H46" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M23 37V29H31M47 29H55V37M23 66V74H31M47 74H55V66" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M32 40H40V48H32ZM44 40H51V47H44ZM32 52H39V59H32ZM44 53H51V60H44ZM39 65H46" stroke="currentColor" stroke-width="2"/></svg>
+          <span>Сканерле</span>
+        </div>
       </div>
-
-      <h3>Тарихты телефоныңнан аш.</h3>
-
-      <p>
-        QR-кодты сканерлеп,
-        цифрлық тарихи саяхатқа қосылыңыз.
-      </p>
-
-      <span class="qr-note" id="qr-status">
-        QR-код дайындалуда...
-      </span>
-
+      <h3>Тарих әр қадамда.</h3>
+      <p>Ескерткіш жанындағы табличкадан QR-кодты сканерлеңіз — сол тарихи орын туралы ақпарат телефонда ашылады.</p>
+      <span class="how-note">Әр ескерткішке — жеке QR-код</span>
     </div>
-
   </div>
 
   <div class="business-impact">

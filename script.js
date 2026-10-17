@@ -9,6 +9,3 @@ const questions=[{q:'Қожа Ахмет Ясауи кесенесі қай қа
 const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('.nav');menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}));if('IntersectionObserver'in window){const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('.reveal').forEach(e=>io.observe(e))}else document.querySelectorAll('.reveal').forEach(e=>e.classList.add('visible'));
 
 
-// QR is embedded in HTML; no third-party service or connection is required.
-const qrStatus = document.getElementById('qr-status');
-if (qrStatus) qrStatus.textContent = 'QR-КОД ДАЙЫН • СКАНЕРЛЕП КӨРІҢІЗ';
