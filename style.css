@@ -476,3 +476,9 @@ h1, h2, h3, h4,
 .arrow-svg { display:block; width:100%; height:100%; }
 .nav-cta .arrow-icon, a[target="_blank"] .arrow-icon { width:17px; height:17px; border:0; margin-left:5px; }
 @media (max-width:680px) { .brand-symbol { width:25px; height:25px; } }
+/* Показываем содержимое, даже если анимация не сработала */
+.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
