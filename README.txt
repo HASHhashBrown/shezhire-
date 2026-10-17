@@ -1,1 +1,3 @@
-Upload index.html, style.css, script.js, tamgaly-fallback.svg and akyrtas-fallback.svg to the root of your GitHub Pages repository. Keep existing other image files. The two SVGs are illustrated offline fallbacks; the site tries the real photographs first.
+ШЕЖІРЕ — финальная сборка. Загрузите index.html, style.css, script.js и папку images в корень репозитория GitHub Pages.
+Карта: географический контур Natural Earth, точки памятников приблизительные.
+Фотографии Ясауи и Ақыртас сохранены локально (WebP). Для Таңбалы пока используется локальная SVG-иллюстрация, поскольку исходная фотография недоступна. Замените images/tamgaly.svg настоящей фотографией и измените ссылку в script.js после получения оригинала.
