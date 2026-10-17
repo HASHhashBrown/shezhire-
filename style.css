@@ -471,5 +471,101 @@ h1, h2, h3, h4,
 .qr-concept .pill{margin:15px auto 0}
 .card-photo,.map-info-image{background-position:center;background-size:cover}
 @media(max-width:680px){.map-sun{width:100px;height:100px}.map-pin text{font-size:16px}}
+/* MOBILE RESPONSIVE DESIGN */
 
+@media (max-width: 768px) {
+
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Главная фотография */
+  .hero {
+    min-height: 100svh;
+    position: relative;
+  }
+
+  .hero-image {
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Главный текст */
+  .hero-copy {
+    width: 100%;
+    max-width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(42px, 10vw, 68px);
+    line-height: 1.08;
+  }
+
+  .hero-copy p {
+    max-width: 100%;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* Разделы */
+  .intro,
+  .cards-section,
+  .map-section,
+  .timeline-section,
+  .quiz-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  /* Карточки */
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .place-card {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* Карта */
+  .map-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .map-art,
+  .map-info {
+    width: 100%;
+    min-width: 0;
+  }
+
+  #kaz-map {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Заголовки */
+  .intro h2,
+  .map-head h2,
+  .timeline-head h2,
+  .quiz-intro h2 {
+    font-size: clamp(32px, 8vw, 48px);
+    line-height: 1.15;
+  }
+
+  /* Тест */
+  .quiz-card {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
 /* Главная фотография — отдельный файл, не фотография карточки */
