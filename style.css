@@ -488,3 +488,13 @@ h1, h2, h3, h4,
 .how-connector { width:42px; flex:0 0 42px; color:#a34d3c; }
 .how-note { display:inline-block; margin-top:26px; padding:10px 15px; border:1px solid #a34d3c; border-radius:99px; color:#a34d3c; font-size:12px; letter-spacing:.04em; }
 @media(max-width:680px){.how-visual{gap:6px;margin:28px 0 22px}.how-landmark svg{width:74px;height:72px}.how-phone svg{width:57px;height:83px}.how-connector{width:24px;flex-basis:24px}.how-landmark span,.how-phone span{font-size:10px}.qr-showcase{padding:38px 18px}.how-showcase h3{font-size:25px}}
+
+/* Consistent vector logo in mission and footer, no platform emoji. */
+.mission-mark .brand-symbol {width:54px;height:54px;margin:0;color:var(--terra);}
+.mission-mark .brand-mark-svg {width:100%;height:100%;}
+footer .footer-brand {display:inline-flex;align-items:center;justify-content:center;gap:7px;white-space:nowrap;}
+footer .footer-brand .brand-symbol {width:25px;height:25px;margin:0;color:#f7f3ea;}
+footer .footer-brand .brand-mark-svg {width:100%;height:100%;}
+.text-arrow {font-family:Arial,sans-serif;font-variant-emoji:text;display:inline-block;font-size:1em;}
+.card-photo,.map-info-image {background-color:#a8bcb1;background-size:cover;background-position:center;}
+@media(max-width:680px){.mission-mark .brand-symbol{width:48px;height:48px;} footer .footer-brand{font-size:19px;}}

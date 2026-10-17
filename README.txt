@@ -1,0 +1,1 @@
+Upload index.html, style.css, script.js, tamgaly-fallback.svg and akyrtas-fallback.svg to the root of your GitHub Pages repository. Keep existing other image files. The two SVGs are illustrated offline fallbacks; the site tries the real photographs first.
