@@ -450,122 +450,21 @@ h1, h2, h3, h4,
   }
 }
 
-/* ШЕЖІРЕ 3.0 — refined cartography and accessiblу media */
-.hero-image{background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Mausoleum%20of%20Khoja%20Ahmed%20Yasawi.jpg');}
-.map-section{background:linear-gradient(155deg,#d8e9e5 0%,#d6e1d6 45%,#e9dfcc 100%);}
-.map-art{background:radial-gradient(circle at 75% 16%,#f6e7bf 0%,transparent 32%),linear-gradient(145deg,#b8d7dc,#e4eddf 65%,#f1dfc3);isolation:isolate;overflow:hidden}
-.map-art::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.22;background-image:radial-gradient(#476f74 0.7px,transparent 0.7px);background-size:14px 14px}
-.map-sun{position:absolute;width:180px;height:180px;border-radius:50%;background:#f2ce92;filter:blur(4px);opacity:.4;right:9%;top:12%}
-#kaz-map{position:relative;z-index:1;filter:drop-shadow(0 14px 10px #4a736a25)}
-.land{fill:url(#land);stroke:#557d76;stroke-width:4}
-.map-country{fill:#4b7d76;opacity:.72;letter-spacing:7px}
-.map-river{fill:none;stroke:#78a9b7;stroke-width:7;stroke-linecap:round;stroke-dasharray:12 14;opacity:.7}
-.map-mountains{fill:none;stroke:#a98e72;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;opacity:.65}
-.map-ornament{fill:none;stroke:#b16e4d;stroke-width:4}
-.map-pin circle.core{fill:#bc6948;stroke:#fffaf1;stroke-width:5;filter:drop-shadow(0 3px 4px #374e4445)}
-.map-pin.active circle.core,.map-pin:hover circle.core{fill:#d89c43}
-.map-pin text{fill:#254b47;stroke:#e9eee2;stroke-width:6px;font-family:'Noto Sans',sans-serif}
-.map-info{border-left:1px solid #d6dfd3}
-.qr-concept{background:linear-gradient(150deg,#d8e5e3,#eee6d4);min-height:390px}
-.qr-concept-icon{width:116px;height:116px;border:2px solid #a34d3c;border-radius:50%;display:grid;place-items:center;font-size:72px;color:#a34d3c;margin:25px auto}
-.qr-concept .pill{margin:15px auto 0}
-.card-photo,.map-info-image{background-position:center;background-size:cover}
-@media(max-width:680px){.map-sun{width:100px;height:100px}.map-pin text{font-size:16px}}
-/* MOBILE RESPONSIVE DESIGN */
-
-@media (max-width: 768px) {
-
-  html, body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  /* Главная фотография */
-  .hero {
-    min-height: 100svh;
-    position: relative;
-  }
-
-  .hero-image {
-    background-size: cover;
-    background-position: center;
-  }
-
-  /* Главный текст */
-  .hero-copy {
-    width: 100%;
-    max-width: 100%;
-    padding: 24px;
-    box-sizing: border-box;
-  }
-
-  .hero-copy h1 {
-    font-size: clamp(42px, 10vw, 68px);
-    line-height: 1.08;
-  }
-
-  .hero-copy p {
-    max-width: 100%;
-    font-size: 15px;
-    line-height: 1.6;
-  }
-
-  /* Разделы */
-  .intro,
-  .cards-section,
-  .map-section,
-  .timeline-section,
-  .quiz-section {
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-  }
-
-  /* Карточки */
-  .cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .place-card {
-    width: 100%;
-    min-width: 0;
-  }
-
-  /* Карта */
-  .map-layout {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .map-art,
-  .map-info {
-    width: 100%;
-    min-width: 0;
-  }
-
-  #kaz-map {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Заголовки */
-  .intro h2,
-  .map-head h2,
-  .timeline-head h2,
-  .quiz-intro h2 {
-    font-size: clamp(32px, 8vw, 48px);
-    line-height: 1.15;
-  }
-
-  /* Тест */
-  .quiz-card {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
+/* SHEZHIRE: MOBILE + ICONS */
+.brand{display:inline-flex;align-items:center}
+.brand-symbol{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;margin-right:7px;border-radius:7px;background:#a34d3c;color:white;font:20px/1 Georgia,serif;vertical-align:middle;font-variant-emoji:text}
+.arrow-icon{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border:1px solid currentColor;border-radius:50%;font:600 16px/1 Arial,sans-serif;font-variant-emoji:text}
+@media(max-width:680px){
+.header{height:70px;padding:0 20px;gap:12px}.brand{font-size:19px;letter-spacing:.025em}.brand-symbol{width:25px;height:25px;font-size:18px}
+.menu-toggle{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;flex:0 0 44px;border:1px solid #d9d9cd;border-radius:12px;background:transparent;color:var(--ink);font-size:25px;line-height:1}
+.nav{top:70px;padding:22px 20px;z-index:30;gap:20px}.nav.open{display:flex}.nav a{font-size:15px}
+.hero{height:auto;min-height:650px;padding:0}.hero-copy{width:100%;max-width:100%;padding:100px 22px 125px}.hero h1,.hero-copy h1{font-size:clamp(36px,10vw,54px);line-height:1.12;letter-spacing:-.035em;overflow-wrap:normal}.hero-copy p{max-width:100%;font-size:14px;line-height:1.75}.hero-foot{left:22px;right:22px;bottom:22px}.hero-foot span:last-child{display:none}.pill{max-width:100%;gap:18px;padding:14px 18px}
+.intro,.cards-section,.map-section,.timeline-section,.quiz-section,.mission,.qr-section{padding-left:22px;padding-right:22px}.intro{grid-template-columns:minmax(0,1fr);gap:15px}.intro-aside{padding-top:0}.mini-stats{flex-wrap:wrap;gap:22px}.cards{grid-template-columns:minmax(0,1fr);gap:20px}.place-card{width:100%;min-width:0}.card-photo{height:260px}
+.map-layout{grid-template-columns:minmax(0,1fr)}.map-art{min-height:270px;padding:10px}.map-info{min-width:0;padding:22px}#kaz-map{max-width:100%;height:auto}.timeline-head{flex-direction:column;align-items:flex-start}.era-content{grid-template-columns:minmax(0,1fr);gap:16px;padding:24px}.era-tabs{gap:8px}.era{padding:11px 15px}.intro h2,.map-head h2,.timeline-head h2,.quiz-intro h2,.mission h2{font-size:clamp(32px,8vw,44px)}.section-line{font-size:9px;letter-spacing:.08em}
 }
-/* Главная фотография — отдельный файл, не фотография карточки */
+@media(max-width:360px){.hero h1,.hero-copy h1{font-size:34px}.header{padding:0 14px}.hero-copy{padding-left:18px;padding-right:18px}}
+
+/* Keep arrow symbols in text presentation on every device */
+.arrow-icon { font-family: Arial, Helvetica, sans-serif; font-variant-emoji: text; font-style: normal; flex-shrink: 0; }
+.nav-cta, .pill, a[target="_blank"] { align-items: center; }
+.nav-cta .arrow-icon, a[target="_blank"] .arrow-icon { width: 19px; height: 19px; font-size: 13px; border-radius: 50%; margin-left: 5px; }
